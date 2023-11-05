@@ -1,8 +1,8 @@
 name: Github egitim CI
 
 on:
-    check_run: 
-        types: [created, completed] 
+    pull_request:  
+        types: [opened, synchronize] 
 
 jobs:
     build:
@@ -17,5 +17,5 @@ jobs:
           with:
             dotnet-version: '7.x'
         - run: dotnet build api/api.csproj
-        - run: dotnet test api/api.csproj
+        - run: dotnet test api.tests/api.tests.csproj
               
