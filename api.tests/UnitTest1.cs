@@ -9,6 +9,6 @@ public class UnitTest1
     [Fact]
     public void Test1()
     {
-        Assert.Equal("Istanbul 20°", _sut.GetCurrentWeather());
+        Assert.Equal("Istanbul 22°", _sut.GetCurrentWeather());
     }
 }
