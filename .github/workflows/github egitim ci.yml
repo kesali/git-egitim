@@ -1,8 +1,8 @@
 name: Github egitim CI
 
 on:
-    check_run: 
-        types: [created, completed] 
+    pull_request:  
+        types: [opened, synchronize] 
 
 jobs:
     build:
